@@ -95,10 +95,10 @@ export default function Header() {
                   transition={"all 0.2s ease-in-out"}
                   outline={"none"}
                 >
-                  Home
+                  Inicio
                 </ListItem>
                 <ListItem
-                  onClick={() => handleNavigation("/tecnologias")}
+                  onClick={() => handleNavigation("/servicos")}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
                   marginLeft={"10px"}
@@ -108,7 +108,7 @@ export default function Header() {
                   Serviços
                 </ListItem>
                 <ListItem
-                  onClick={() => handleNavigation("/projetos")}
+                  onClick={() => handleNavigation("/contatos")}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
                   marginLeft={"10px"}
@@ -118,7 +118,7 @@ export default function Header() {
                   Contatos
                 </ListItem>
                 <ListItem
-                  onClick={() => handleNavigation("/contato")}
+                  onClick={() => handleNavigation("/sobre")}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
                   marginLeft={"10px"}
@@ -151,7 +151,6 @@ export default function Header() {
         >
           <Flex bg={useColorModeValue("white", "gray.800")}>
             <UnorderedList
-              //position={"absolute"}
               padding={0}
               margin={0}
               top={61}
@@ -162,36 +161,46 @@ export default function Header() {
             >
               <ListItem
                 onClick={() => handleNavigation("/home")}
-                marginTop={"0px"}
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                fontWeight={"bold"}
+                _hover={{ color: "#12FCEE", cursor: "pointer" }}
+                transition={"all 0.2s ease-in-out"}
+                outline={"none"}
               >
-                Home
+                Inicio
               </ListItem>
               <ListItem
-                onClick={() => handleNavigation("/tecnologias")}
-                marginTop={"10px"}
+                onClick={() => handleNavigation("/servicos")}
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                fontWeight={"bold"}
+                _hover={{ color: "#12FCEE", cursor: "pointer" }}
+                transition={"all 0.2s ease-in-out"}
+                outline={"none"}
+                mt={"10px"}
               >
-                Tecnologias
+                Serviços
               </ListItem>
               <ListItem
-                onClick={() => handleNavigation("/projetos")}
-                marginTop={"10px"}
+                onClick={() => handleNavigation("/contatos")}
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                fontWeight={"bold"}
+                _hover={{ color: "#12FCEE", cursor: "pointer" }}
+                transition={"all 0.2s ease-in-out"}
+                outline={"none"}
+                mt={"10px"}
               >
-                Projetos
+                Contatos
               </ListItem>
               <ListItem
-                onClick={() => handleNavigation("/contato")}
-                marginTop={"10px"}
+                onClick={() => handleNavigation("/sobre")}
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
-                zIndex={1}
+                fontWeight={"bold"}
+                _hover={{ color: "#12FCEE", cursor: "pointer" }}
+                transition={"all 0.2s ease-in-out"}
+                outline={"none"}
+                mt={"10px"}
               >
-                Contato
+                Sobre
               </ListItem>
             </UnorderedList>
           </Flex>

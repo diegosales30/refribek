@@ -11,7 +11,7 @@ const Routers = () => {
     <Box
       display={"flex"}
       flexDirection={"column"}
-      height={"100%"}
+      height={{ base: "100%", md: "100%", lg: "100vh" }}
       justifyContent={"space-evenly"}
       className="teste"
     >

@@ -35,6 +35,7 @@ export default function Footer() {
           <Link label={"Gmail"} href={"#"} target={"_black"}>
             <SiGmail
               style={{
+                fontSize: "25px",
                 color: "#DB4437",
               }}
             />
@@ -42,6 +43,7 @@ export default function Footer() {
           <Link label={"WhatsApp"} href={"#"} target={"_black"}>
             <SiWhatsapp
               style={{
+                fontSize: "25px",
                 borderRadius: "100%",
                 backgroundColor: "#25D366",
                 color: "white",
@@ -51,6 +53,7 @@ export default function Footer() {
           <Link label={"Facebook"} href={"#"} target={"_black"}>
             <SiFacebook
               style={{
+                fontSize: "25px",
                 borderRadius: "100%",
                 backgroundColor: "white",
                 color: "#4267B2",

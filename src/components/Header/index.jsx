@@ -69,7 +69,7 @@ export default function Header() {
               alt="logo"
               w={{ base: "auto", md: "200px" }}
               cursor={"pointer"}
-              onClick={() => handleNavigation("/home")}
+              onClick={() => handleNavigation("/")}
               bg={"transparent"}
             />
 
@@ -87,7 +87,7 @@ export default function Header() {
                 gap={12}
               >
                 <ListItem
-                  onClick={() => handleNavigation("/home")}
+                  onClick={() => handleNavigation("/")}
                   cursor={"pointer"}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
@@ -160,7 +160,7 @@ export default function Header() {
               listStyleType={"none"}
             >
               <ListItem
-                onClick={() => handleNavigation("/home")}
+                onClick={() => handleNavigation("/")}
                 cursor={"pointer"}
                 fontWeight={"bold"}
                 _hover={{ color: "#12FCEE", cursor: "pointer" }}

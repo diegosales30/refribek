@@ -24,8 +24,8 @@ const Home = () => {
             marginBottom={4}
             flexDirection={{ base: "column", md: "row" }}
           >
-            <Box w={"350px"} margin={"auto"}>
-              <Image src={img3} minW={"300px"} W={"610px"} />
+            <Box w={"310px"} margin={"auto"}>
+              <Image src={img3} minW={"310px"} W={"610px"} />
             </Box>
             <Box display={"flex"} gap={"30"} textAlign={"center"}>
               <Box display={"flex"} flexDirection={"column"} gap={30}>

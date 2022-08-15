@@ -33,13 +33,29 @@ export default function Footer() {
         </Text>
         <Stack direction={"row"} spacing={6}>
           <Link label={"Gmail"} href={"#"} target={"_black"}>
-            <SiGmail />
+            <SiGmail
+              style={{
+                color: "#DB4437",
+              }}
+            />
           </Link>
           <Link label={"WhatsApp"} href={"#"} target={"_black"}>
-            <SiWhatsapp />
+            <SiWhatsapp
+              style={{
+                borderRadius: "100%",
+                backgroundColor: "#25D366",
+                color: "white",
+              }}
+            />
           </Link>
           <Link label={"Facebook"} href={"#"} target={"_black"}>
-            <SiFacebook />
+            <SiFacebook
+              style={{
+                borderRadius: "100%",
+                backgroundColor: "white",
+                color: "#4267B2",
+              }}
+            />
           </Link>
         </Stack>
       </Container>

@@ -51,10 +51,11 @@ const Sobre = () => {
           </Box>
         </Box>
       </Box>
+
       <Box
         display={"flex"}
         maxW={"1280px"}
-        justifyContent={"space-between"}
+        justifyContent={"center"}
         alignItems={"flex-end"}
         marginTop={"30px"}
         flexWrap={{ base: "wrap", md: "nowap" }}

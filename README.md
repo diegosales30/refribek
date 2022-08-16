@@ -31,7 +31,7 @@
 No terminal clone o projeto:
 
 ```
-https://github.com/ThiagodaSilva27/himpact-page.git
+
 ```
 
 Entre na pasta do projeto:

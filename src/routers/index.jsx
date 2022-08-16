@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import TopFood from "../components/TopFooter";
 
 import Home from "../pages/home";
+import Sobre from "../pages/sobre";
 
 const Routers = () => {
   return (
@@ -18,6 +19,7 @@ const Routers = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
       </Routes>
       <TopFood />
       <Footer />

@@ -108,7 +108,7 @@ export default function Header() {
                   Serviços
                 </ListItem>
                 <ListItem
-                  onClick={() => handleNavigation("/contatos")}
+                  onClick={() => handleNavigation("/contato")}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
                   marginLeft={"10px"}
@@ -181,7 +181,7 @@ export default function Header() {
                 Serviços
               </ListItem>
               <ListItem
-                onClick={() => handleNavigation("/contatos")}
+                onClick={() => handleNavigation("/contato")}
                 cursor={"pointer"}
                 fontWeight={"bold"}
                 _hover={{ color: "#12FCEE", cursor: "pointer" }}

@@ -9,9 +9,10 @@ export default function Main({ children }) {
       spacing={{ base: 8, md: 10 }}
       align={"center"}
       direction={"column"}
-      padding={"0"}
-      //add 2 linhas
+
       h={"100%"}
+      padding={"0"}
+
       margin={{ base: "initial", md: "initial", lg: "auto" }}
     >
       {children}

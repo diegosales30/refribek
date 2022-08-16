@@ -6,7 +6,7 @@ import img1 from "../../assets/imagens/img1.png";
 
 const Sobre = () => {
   return (
-    // <Main style={{ width: "100%" }} display={"flex"} flexDirection={"column"}>
+
     <Main>
       <Box
         w={"100%"}
@@ -18,6 +18,7 @@ const Sobre = () => {
         gap={"30px"}
         flexWrap={{ base: "wrap", md: "nowrap" }}
         padding={"16px"}
+        marginBottom={50}
       >
         <Box>
           <Image minW={"300px"} w={"900px"} src={img1} />
@@ -59,7 +60,7 @@ const Sobre = () => {
         justifyContent={"center"}
         alignItems={"flex-end"}
         marginTop={"30px"}
-        flexWrap={{ base: "wrap", md: "nowap" }}
+        flexWrap={{ base: "wrap", md: "wrap" }}
         gap={"30px"}
         padding={"16px"}
       >
@@ -119,7 +120,7 @@ const Sobre = () => {
         </CardSobre>
       </Box>
     </Main>
-    // </Main>
+   
   );
 };
 

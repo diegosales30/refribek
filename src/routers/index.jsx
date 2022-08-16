@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TopFood from "../components/TopFooter";
+import Contato from "../pages/contato";
 
 import Home from "../pages/home";
 import Sobre from "../pages/sobre";
@@ -20,6 +21,7 @@ const Routers = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
       </Routes>
       <TopFood />
       <Footer />

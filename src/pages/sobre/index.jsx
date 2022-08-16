@@ -6,7 +6,8 @@ import img1 from "../../assets/imagens/img1.png";
 
 const Sobre = () => {
   return (
-    <Main style={{ Width: "100%" }} display={"flex"} flexDirection={"column"}>
+    // <Main style={{ width: "100%" }} display={"flex"} flexDirection={"column"}>
+    <Main>
       <Box
         w={"100%"}
         maxW={"1280px"}
@@ -118,6 +119,7 @@ const Sobre = () => {
         </CardSobre>
       </Box>
     </Main>
+    // </Main>
   );
 };
 

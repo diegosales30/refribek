@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Flex, Text } from "@chakra-ui/react";
+import { AspectRatio, Box, Text } from "@chakra-ui/react";
 import React from "react";
 import Main from "../../components/Main";
 
@@ -11,10 +11,11 @@ const Contato = () => {
         flexWrap={{ base: "wrap", md: "rap" }}
         alignItems={"center"}
         justifyContent={"center"}
-        alignContent={"center"}
+        alignContent={"flex-start"}
         width={"100%"}
         gap={30}
-        /* minH={200} */
+        mt={30}
+        mb={30}
         h={{ base: "100%", md: "100%", lg: "83vh", xl: "82vh" }}
         minH={"70vh"}
       >
@@ -48,16 +49,16 @@ const Contato = () => {
             justifyContent={"space-between"}
             alignItems={"center"}
           >
-            <Text fontSize={20} fontWeight={800} marginBottom={2}>
+            <Text fontSize={19} fontWeight={800} marginBottom={2}>
               Telefone: (21) 99409-5425
             </Text>
-            <Text fontSize={20} fontWeight={800} marginBottom={2}>
+            <Text fontSize={19} fontWeight={800} marginBottom={2}>
               E-mail: refribek@live.com
             </Text>
-            <Text fontSize={20} fontWeight={800} marginBottom={2}>
+            <Text fontSize={19} fontWeight={800} marginBottom={2}>
               Segunda a Sexta: 8:00 ás 18:00 Sábados: 8:00 ás 14:00
             </Text>
-            <Text fontSize={20} fontWeight={800} marginBottom={2}>
+            <Text fontSize={19} fontWeight={800} marginBottom={2}>
               Matriz: Rua Itambaraçá – 125 (Lote 22 – Quadra 85) Bairro: Campo
               Grande – CEP:23060-070 – RJ
             </Text>

@@ -28,18 +28,6 @@
 
 ### Como rodar a aplicação:
 
-No terminal clone o projeto:
-
-```
-
-```
-
-Entre na pasta do projeto:
-
-```
-cd himpact-page
-```
-
 Instale as dependencias:
 
 ```

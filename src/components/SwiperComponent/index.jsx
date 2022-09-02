@@ -9,20 +9,24 @@ import "./styles.css";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
 
-import img1 from "../../assets/imagens/img1.png";
-import img2 from "../../assets/imagens/img2.png";
-import img3 from "../../assets/imagens/img3.png";
-import img4 from "../../assets/imagens/img4.png";
-import img5 from "../../assets/imagens/img5.png";
-import img6 from "../../assets/imagens/img6.png";
+import img1 from "../../assets/imagens/carrosel01.jpeg";
+import img2 from "../../assets/imagens/carrosel02.jpeg";
+import img3 from "../../assets/imagens/carrosel03.jpg";
+import img4 from "../../assets/imagens/carrosel04.jpg";
+import img5 from "../../assets/imagens/carrosel05.jpeg";
+import img6 from "../../assets/imagens/carrosel06.jpeg";
+import img9 from "../../assets/imagens/carrosel09.jpeg";
+import img10 from "../../assets/imagens/carrosel10.jpeg";
+import img11 from "../../assets/imagens/carrosel11.jpeg";
+
 import { Box, Image } from "@chakra-ui/react";
 
-const Data = [img1, img2, img3, img4, img5, img6];
+const Data = [img1, img2, img3, img4, img5, img6, img9, img10, img11];
 
 export default function SwiperComponent() {
   return (
     <>
-      <Box h={"300px"} maxW={"1280px"}>
+      <Box h={"400px"} maxW={"1280px"}>
         <Swiper
           pagination={true}
           modules={[Pagination, Autoplay]}
@@ -35,7 +39,7 @@ export default function SwiperComponent() {
         >
           {Data.map((item, index) => (
             <SwiperSlide key={index}>
-              <Image src={item} alt={item} fit={"cover"} />
+              <Image objectFit="cover" src={item} alt={item} />
             </SwiperSlide>
           ))}
         </Swiper>

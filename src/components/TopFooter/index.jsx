@@ -4,7 +4,7 @@ import pix from "../../assets/imagens/pix.png";
 
 export default function TopFood() {
   return (
-    <Box bg={"#27282D"} color={"white"}>
+    <Box bg={"#27282D"} color={"white"} display={{ base: "block" }}>
       <Container
         as={Stack}
         maxW={"1280px"}

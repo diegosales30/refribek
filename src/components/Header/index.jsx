@@ -14,7 +14,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import ColorModeToggle from "../nightMode";
 import { useNavigate } from "react-router-dom";
 
-import logo from "../../assets/imagens/logo.png";
+import logo from "../../assets/imagens/logoRefribek.png";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -33,8 +33,9 @@ export default function Header() {
           margin="0 auto"
           maxW="1280px"
           color={useColorModeValue("gray.300", "white")}
-          minH={"60px"}
-          h="81px"
+          // minH={"60px"}
+          // h="81px"
+
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderStyle={"solid"}

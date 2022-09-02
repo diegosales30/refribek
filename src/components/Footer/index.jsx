@@ -9,11 +9,13 @@ import {
 
 import { SiGmail, SiWhatsapp, SiFacebook } from "react-icons/si";
 
+const breakpoints = ["100vw"];
 export default function Footer() {
   return (
     <Box
       bg={useColorModeValue("#0E2A52", "#171923")}
       color={useColorModeValue("gray.300", "white")}
+      w={breakpoints}
     >
       <Container
         as={Stack}
@@ -32,7 +34,11 @@ export default function Footer() {
           TÉCNICO
         </Text>
         <Stack direction={"row"} spacing={6}>
-          <Link label={"Gmail"} href={"#"} target={"_black"}>
+          <Link
+            label={"Gmail"}
+            href={"mailto:refribek@live.com"}
+            target={"_black"}
+          >
             <SiGmail
               style={{
                 fontSize: "25px",
@@ -40,7 +46,11 @@ export default function Footer() {
               }}
             />
           </Link>
-          <Link label={"WhatsApp"} href={"#"} target={"_black"}>
+          <Link
+            label={"WhatsApp"}
+            href={"https://wa.me/5521994095425"}
+            target={"_black"}
+          >
             <SiWhatsapp
               style={{
                 fontSize: "25px",
@@ -50,7 +60,11 @@ export default function Footer() {
               }}
             />
           </Link>
-          <Link label={"Facebook"} href={"#"} target={"_black"}>
+          <Link
+            label={"Facebook"}
+            href={"https://www.facebook.com/CelsoRefribek"}
+            target={"_black"}
+          >
             <SiFacebook
               style={{
                 fontSize: "25px",

@@ -6,7 +6,6 @@ import img1 from "../../assets/imagens/img1.png";
 
 const Sobre = () => {
   return (
-
     <Main>
       <Box
         w={"100%"}
@@ -20,9 +19,9 @@ const Sobre = () => {
         padding={"16px"}
         marginBottom={50}
       >
-        <Box>
+        {/* <Box>
           <Image minW={"300px"} w={"900px"} src={img1} />
-        </Box>
+        </Box> */}
         <Box>
           <Box>
             <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"start"}>
@@ -30,7 +29,10 @@ const Sobre = () => {
             </Text>
           </Box>
           <Box marginTop={"10px"}>
-            <Text textAlign={"start"}>
+            <Text
+              textAlign={"start"}
+              fontSize={{ base: "15px", md: "15px", lg: "20px" }}
+            >
               História: A Refribek iniciou suas atividades em setembro de 2013
               pelo eletrotécnico Celso Belmiro que atua na profissão desde 1993,
               visando prestar serviços diferenciados, de qualidade e a preços
@@ -38,13 +40,19 @@ const Sobre = () => {
             </Text>
           </Box>
           <Box marginTop={"10px"}>
-            <Text textAlign={"start"}>
+            <Text
+              textAlign={"start"}
+              fontSize={{ base: "15px", md: "15px", lg: "20px" }}
+            >
               O que fazemos? A Refribek é uma empresa especializada no ramo de
               soluções em refrigeração e elétrica no Rio de janeiro – RJ.
             </Text>
           </Box>
           <Box marginTop={"10px"}>
-            <Text textAlign={"start"}>
+            <Text
+              textAlign={"start"}
+              fontSize={{ base: "15px", md: "15px", lg: "20px" }}
+            >
               Nossas experiências? A Refribek é comprovadamente uma empresa
               séria, responsável pela refrigeração e climatização de diversos
               hotéis 5 estrelas, condomínios, comércios, residências e órgãos
@@ -75,11 +83,14 @@ const Sobre = () => {
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
             Missão
           </Text>
-          <Text color={"black"} fontSize={"18px"} textAlign={"start"}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia,
-            nostrum nisi quod asperiores enim ut cum aut quis doloribus iusto
-            eum, aspernatur quo quidem dolor rem officiis tempora assumenda
-            tempore!
+          <Text
+            color={"black"}
+            fontSize={{ base: "15px", md: "15px", lg: "18px" }}
+            textAlign={"start"}
+          >
+            A Refribek tem como missão ser excelência em atendimento e prestação
+            de serviços, para que nossos clientes se sintam valorizados e tenham
+            satisfação em contar com nosso time técnico.
           </Text>
         </CardSobre>
         <CardSobre
@@ -93,11 +104,14 @@ const Sobre = () => {
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
             Visão
           </Text>
-          <Text color={"black"} fontSize={"18px"} textAlign={"start"}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sed
-            delectus neque distinctio error autem libero tempore maxime
-            voluptates. Delectus fugit vitae provident eligendi! Corrupti
-            provident fugiat sapiente laudantium adipisci.
+          <Text
+            color={"black"}
+            fontSize={{ base: "15px", md: "15px", lg: "18px" }}
+            textAlign={"start"}
+          >
+            Empreender com amor pelo que faz, para que a qualidade e preço justo
+            seja o diferencial nos nossos serviços e tornar a nossa marca como
+            referencia em serviços de qualidade.
           </Text>
         </CardSobre>
         <CardSobre
@@ -111,16 +125,17 @@ const Sobre = () => {
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
             Valores
           </Text>
-          <Text color={"black"} fontSize={"18px"} textAlign={"start"}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            tempora dignissimos aperiam eligendi libero corrupti blanditiis
-            natus assumenda, totam fugiat non sapiente incidunt? Voluptas veniam
-            consequuntur nam est et ullam!
+          <Text
+            color={"black"}
+            fontSize={{ base: "15px", md: "15px", lg: "18px" }}
+            textAlign={"start"}
+          >
+            Nossos valores se aplicam a prazo de entrega do serviço, qualidade,
+            preço justo e garantia de satisfação aos nossos clientes.
           </Text>
         </CardSobre>
       </Box>
     </Main>
-   
   );
 };
 

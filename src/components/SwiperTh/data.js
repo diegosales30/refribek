@@ -1,7 +1,7 @@
 const dataImg = [
   {
     photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2022-07-09-at-17.09.05-484x1024.jpeg",
+      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.27.08-1024x576.jpeg",
   },
   {
     photo:
@@ -25,7 +25,7 @@ const dataImg = [
   },
   {
     photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.27.08-1024x576.jpeg",
+      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2022-07-09-at-17.09.05-484x1024.jpeg",
   },
   {
     photo:

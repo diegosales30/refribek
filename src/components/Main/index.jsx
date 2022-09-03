@@ -9,7 +9,7 @@ export default function Main({ children }) {
       spacing={{ base: 10, md: 10 }}
       align={"center"}
       direction={"column"}
-      w={[300, 400, 600, 800, 1000, 1280, 1336]}
+      w={[350, 400, 600, 800, 1000, 1280, 1336]}
       h={{
         base: "100%",
         sm: "100%",

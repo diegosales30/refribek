@@ -42,7 +42,11 @@ const Servicos = () => {
               marginTop={"5px"}
               minW={"300px"}
             >
-              <Image src={img1} W={"610px"} />
+              <Image
+                src={img1}
+                W={"610px"}
+                borderRadius={"20px 0px  20px 0px"}
+              />
             </Box>
             <Box w={"50%"} maxW={"550px"}>
               <Text
@@ -83,7 +87,11 @@ const Servicos = () => {
               marginTop={"5px"}
               minW={"300px"}
             >
-              <Image src={img4} W={"610px"} />
+              <Image
+                src={img4}
+                W={"610px"}
+                borderRadius={"20px 0px  20px 0px"}
+              />
             </Box>
           </Box>
         </Box>

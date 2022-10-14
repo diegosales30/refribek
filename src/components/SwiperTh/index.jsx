@@ -48,9 +48,9 @@ export default function SwiperTh() {
       >
         {dataImg?.map((item, index) => (
           <SwiperSlide
-            style={{
-              border: "4px solid white",
-            }}
+            // style={{
+            //   border: "4px solid white",
+            // }}
             key={index}
           >
             <Image src={item.photo} alt={item} />

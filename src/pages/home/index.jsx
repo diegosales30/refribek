@@ -6,11 +6,17 @@ import SwiperComponent from "../../components/SwiperComponent";
 import img3 from "../../../src/assets/imagens/motor.jpeg";
 import { useContext } from "react";
 import { LanguageContext } from "./../../provider/language/index";
+
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import TopFood from "../../components/TopFooter";
+
 const Home = () => {
   const { language } = useContext(LanguageContext);
 
   return (
     <>
+      <Header />
       <Main>
         <SwiperComponent />
 
@@ -56,6 +62,8 @@ const Home = () => {
           </Box>
         </Flex>
       </Main>
+      <TopFood />
+      <Footer />
     </>
   );
 };

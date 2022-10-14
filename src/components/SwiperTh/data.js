@@ -1,49 +1,50 @@
+import img0 from "../../assets/refribekFotos/f0.jpeg";
+import img1 from "../../assets/refribekFotos/f1.jpeg";
+import img2 from "../../assets/refribekFotos/f2.jpeg";
+import img3 from "../../assets/refribekFotos/f3.jpeg";
+import img4 from "../../assets/refribekFotos/f4.jpeg";
+import img5 from "../../assets/refribekFotos/f5.jpeg";
+import img6 from "../../assets/refribekFotos/f6.jpeg";
+import img7 from "../../assets/refribekFotos/f7.jpeg";
+import img8 from "../../assets/refribekFotos/f8.jpeg";
+import img9 from "../../assets/refribekFotos/f9.jpeg";
+import img10 from "../../assets/refribekFotos/f10.jpeg";
+
 const dataImg = [
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.27.08-1024x576.jpeg",
+    photo: img0,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.46.24-2-1024x1024.jpeg",
+    photo: img1,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.46.24-1-1024x743.jpeg",
+    photo: img2,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.46.23-1024x1000.jpeg",
+    photo: img3,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.46.23-1-1024x1004.jpeg",
+    photo: img4,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2020-10-24-at-21.43.18-1024x1006.jpeg",
+    photo: img5,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2022-07-09-at-17.09.05-484x1024.jpeg",
+    photo: img6,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/IMG_20180404_095522966_HDR-1024x576.jpg",
+    photo: img7,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/IMG_20180220_153948978-1024x576.jpg",
+    photo: img8,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2017/09/Buenos-Aires-157-1024x576.jpg",
+    photo: img9,
   },
   {
-    photo:
-      "http://www.refribek.com.br/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-24-at-21.46.24-1024x1024.jpeg",
+    photo: img10,
   },
-  {
+  /*  {
     photo:
       "http://www.refribek.com.br/wp-content/uploads/2017/09/IMG_20180329_110204331-2-1024x576.jpg",
   },
@@ -82,7 +83,7 @@ const dataImg = [
   {
     photo:
       "http://www.refribek.com.br/wp-content/uploads/2017/09/WhatsApp-Image-2017-11-04-at-5.45.17-PM-1024x576.jpeg",
-  },
+  }, */
 ];
 
 export { dataImg };

@@ -10,97 +10,105 @@ import SwiperTh from "../../components/SwiperTh";
 
 import { useContext } from "react";
 import { LanguageContext } from "./../../provider/language/index";
+import Header from "../../components/Header";
+import TopFood from "../../components/TopFooter";
+import Footer from "../../components/Footer";
 
 const Servicos = () => {
   const { language } = useContext(LanguageContext);
   return (
-    <Main>
-      <Heading as={"h2"}>{language ? "Gallery" : "Galeria"}</Heading>
+    <>
+      <Header />
+      <Main>
+        <Heading as={"h2"}>{language ? "Gallery" : "Galeria"}</Heading>
 
-      <SwiperTh />
+        <SwiperTh />
 
-      <Box maxW={"1280px"} mb={"30px"} mt={10}>
-        <Flex
-          display={"flex"}
-          flexWrap={{
-            base: "wrap",
-            md: "wrap",
-            lg: "nowrap",
-          }}
-          w={"100%"}
-          gap={20}
-        >
-          <Box
+        <Box maxW={"1280px"} mb={"30px"} mt={10}>
+          <Flex
             display={"flex"}
-            alignItems={"center"}
-            justifyContent={"space-around"}
-            flexWrap={{ base: "wrap", md: "wrap", lg: "nowrap" }}
-            gap={5}
+            flexWrap={{
+              base: "wrap",
+              md: "wrap",
+              lg: "nowrap",
+            }}
             w={"100%"}
-            margin={{ base: "auto", md: "auto", lg: "initial" }}
+            gap={20}
           >
             <Box
-              w={"50%"}
-              maxW={"550px"}
-              margin={"auto"}
-              marginTop={"5px"}
-              minW={"300px"}
+              display={"flex"}
+              alignItems={"center"}
+              justifyContent={"space-around"}
+              flexWrap={{ base: "wrap", md: "wrap", lg: "nowrap" }}
+              gap={5}
+              w={"100%"}
+              margin={{ base: "auto", md: "auto", lg: "initial" }}
             >
-              <Image
-                src={img1}
-                W={"610px"}
-                borderRadius={"20px 0px  20px 0px"}
-              />
-            </Box>
-            <Box w={"50%"} maxW={"550px"}>
-              <Text
-                fontSize={{ base: "15px", md: "15px", lg: "15px" }}
-                fontWeight={"bold"}
-                textAlign={"left"}
+              <Box
+                w={"50%"}
+                maxW={"550px"}
+                margin={"auto"}
+                marginTop={"5px"}
+                minW={"300px"}
               >
-                {language
-                  ? "It is important to note that all images are copyrighted by Refribek, these repairs and installations were performed by our team of professionals."
-                  : "Importante frisar que todas as imagens são de direito autoral da Refribek, esses reparos e instalações foram executados por nossa equipe de profissionais."}
-              </Text>
+                <Image
+                  src={img1}
+                  W={"610px"}
+                  borderRadius={"20px 0px  20px 0px"}
+                />
+              </Box>
+              <Box w={"50%"} maxW={"550px"}>
+                <Text
+                  fontSize={{ base: "15px", md: "15px", lg: "15px" }}
+                  fontWeight={"bold"}
+                  textAlign={"left"}
+                >
+                  {language
+                    ? "It is important to note that all images are copyrighted by Refribek, these repairs and installations were performed by our team of professionals."
+                    : "Importante frisar que todas as imagens são de direito autoral da Refribek, esses reparos e instalações foram executados por nossa equipe de profissionais."}
+                </Text>
+              </Box>
             </Box>
-          </Box>
-        </Flex>
-        <Box display={"flex"} w={"100%"}>
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            margin={"auto"}
-            marginTop={"20px"}
-            flexWrap={{ base: "wrap", md: "wrap", lg: "nowrap" }}
-            gap={10}
-          >
-            <Box w={"50%"} margin={"auto"} maxW={"550px"}>
-              <Text
-                fontSize={{ base: "15px", md: "15px", lg: "15px" }}
-                fontWeight={"bold"}
-              >
-                {language
-                  ? "Most wanted services? Installation and repair of Split's, cleaning and repair of air conditioners and electrical repairs in general."
-                  : "Serviços mais procurados? Instalação e conserto de Split’s ,limpeza e conserto de ar condicionados e reparos elétricos em geral."}
-              </Text>
-            </Box>
+          </Flex>
+          <Box display={"flex"} w={"100%"}>
             <Box
-              w={"50%"}
-              maxW={"550px"}
+              display={"flex"}
+              alignItems={"center"}
               margin={"auto"}
-              marginTop={"5px"}
-              minW={"300px"}
+              marginTop={"20px"}
+              flexWrap={{ base: "wrap", md: "wrap", lg: "nowrap" }}
+              gap={10}
             >
-              <Image
-                src={img4}
-                W={"610px"}
-                borderRadius={"20px 0px  20px 0px"}
-              />
+              <Box w={"50%"} margin={"auto"} maxW={"550px"}>
+                <Text
+                  fontSize={{ base: "15px", md: "15px", lg: "15px" }}
+                  fontWeight={"bold"}
+                >
+                  {language
+                    ? "Most wanted services? Installation and repair of Split's, cleaning and repair of air conditioners and electrical repairs in general."
+                    : "Serviços mais procurados? Instalação e conserto de Split’s ,limpeza e conserto de ar condicionados e reparos elétricos em geral."}
+                </Text>
+              </Box>
+              <Box
+                w={"50%"}
+                maxW={"550px"}
+                margin={"auto"}
+                marginTop={"5px"}
+                minW={"300px"}
+              >
+                <Image
+                  src={img4}
+                  W={"610px"}
+                  borderRadius={"20px 0px  20px 0px"}
+                />
+              </Box>
             </Box>
           </Box>
         </Box>
-      </Box>
-    </Main>
+      </Main>
+      <TopFood />
+      <Footer />
+    </>
   );
 };
 

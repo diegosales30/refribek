@@ -92,7 +92,7 @@ export default function Header() {
                 gap={12}
               >
                 <ListItem
-                  onClick={() => handleNavigation("/")}
+                  onClick={() => handleNavigation("/home")}
                   cursor={"pointer"}
                   fontWeight={"bold"}
                   _hover={{ color: "#12FCEE", cursor: "pointer" }}
@@ -172,7 +172,7 @@ export default function Header() {
               listStyleType={"none"}
             >
               <ListItem
-                onClick={() => handleNavigation("/")}
+                onClick={() => handleNavigation("/home")}
                 cursor={"pointer"}
                 fontWeight={"bold"}
                 _hover={{ color: "#12FCEE", cursor: "pointer" }}

@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--quaternary);
     
     

@@ -11,9 +11,11 @@ import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper";
 
 import { dataImg } from "./data";
+
 import { Box, Image } from "@chakra-ui/react";
 
 export default function SwiperTh() {
+  console.log(dataImg);
   return (
     <Box maxWidth={"1280px"}>
       <Swiper
@@ -44,7 +46,7 @@ export default function SwiperTh() {
           justifyItems: "center",
         }}
       >
-        {dataImg.map((item, index) => (
+        {dataImg?.map((item, index) => (
           <SwiperSlide
             style={{
               border: "4px solid white",

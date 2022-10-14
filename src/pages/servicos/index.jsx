@@ -15,7 +15,7 @@ const Servicos = () => {
   const { language } = useContext(LanguageContext);
   return (
     <Main>
-      <Heading as={"h2"}>Galeria</Heading>
+      <Heading as={"h2"}>{language ? "Gallery" : "Galeria"}</Heading>
 
       <SwiperTh />
 

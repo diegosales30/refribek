@@ -2,7 +2,11 @@ import { Box, Container, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import { FaCcMastercard, FaCcVisa } from "react-icons/fa";
 import pix from "../../assets/imagens/pix.png";
 
+import { useContext } from "react";
+import { LanguageContext } from "./../../provider/language/index";
+
 export default function TopFood() {
+  const { language } = useContext(LanguageContext);
   return (
     <Box bg={"#27282D"} color={"white"} display={{ base: "block" }}>
       <Container
@@ -17,7 +21,7 @@ export default function TopFood() {
         <Box>
           <Flex flexDirection={"column"} gap={"2"}>
             <Text as={"p"} fontSize={"0.9rem"} fontWeight={"bold"}>
-              FORMAS DE PAGAMENTOS
+              {language ? "PAYMENT METHODS" : "FORMAS DE PAGAMENTOS"}
             </Text>
             <Box display={"flex"} justifyContent={"space-around"}>
               <FaCcMastercard size={"25px"} />
@@ -33,10 +37,12 @@ export default function TopFood() {
           gap={2}
         >
           <Text as={"p"} fontSize={"0.9rem"} fontWeight={"bold"}>
-            HORÁRIO DE FUNCIONAMENTO
+            {language ? "OPENING HOURS" : "HORÁRIO DE FUNCIONAMENTO"}
           </Text>
           <Text as={"p"} fontSize={"0.9rem"}>
-            Segunda a sexta: 8:00 ás 18:00 / Sábados: 8:00 ás 14:00
+            {language
+              ? "Monday to Friday: 8:00 to 18:00 / Saturday: 8:00 to 14:00"
+              : "Segunda a sexta: 8:00 ás 18:00 / Sábados: 8:00 ás 14:00"}
           </Text>
         </Box>
         <Box
@@ -46,10 +52,14 @@ export default function TopFood() {
           gap={2}
         >
           <Text as={"p"} fontSize={"0.9rem"} fontWeight={"bold"}>
-            Matriz: Rua Itambaraçá – 125 (Lote 22 – Quadra 85)
+            {language
+              ? "Headquarters: Rua Itambaraçá - 125 (Lot 22 - Block 85)"
+              : "Matriz: Rua Itambaraçá – 125 (Lote 22 – Quadra 85)"}
           </Text>
           <Text as={"p"} fontSize={"0.9rem"}>
-            Bairro: Campo Grande – CEP:23060-070 – Rio de Janeiro/RJ
+            {language
+              ? "District: Campo Grande - CEP: 23060-070 - Rio de Janeiro/RJ"
+              : "Bairro: Campo Grande – CEP:23060-070 – Rio de Janeiro/RJ"}
           </Text>
         </Box>
       </Container>

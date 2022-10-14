@@ -8,7 +8,11 @@ import img1 from "../../../src/assets/imagens/img5.png";
 import Main from "../../components/Main";
 import SwiperTh from "../../components/SwiperTh";
 
+import { useContext } from "react";
+import { LanguageContext } from "./../../provider/language/index";
+
 const Servicos = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <Main>
       <Heading as={"h2"}>Galeria</Heading>
@@ -54,9 +58,9 @@ const Servicos = () => {
                 fontWeight={"bold"}
                 textAlign={"left"}
               >
-                Importante frisar que todas as imagens são de direito autoral da
-                Refribek, esses reparos e instalações foram executados por nossa
-                equipe de profissionais.
+                {language
+                  ? "It is important to note that all images are copyrighted by Refribek, these repairs and installations were performed by our team of professionals."
+                  : "Importante frisar que todas as imagens são de direito autoral da Refribek, esses reparos e instalações foram executados por nossa equipe de profissionais."}
               </Text>
             </Box>
           </Box>
@@ -75,9 +79,9 @@ const Servicos = () => {
                 fontSize={{ base: "15px", md: "15px", lg: "15px" }}
                 fontWeight={"bold"}
               >
-                Serviços mais procurados? Instalação e conserto de Split’s ,
-                limpeza e conserto de ar condicionados e reparos elétricos em
-                geral.
+                {language
+                  ? "Most wanted services? Installation and repair of Split's, cleaning and repair of air conditioners and electrical repairs in general."
+                  : "Serviços mais procurados? Instalação e conserto de Split’s ,limpeza e conserto de ar condicionados e reparos elétricos em geral."}
               </Text>
             </Box>
             <Box

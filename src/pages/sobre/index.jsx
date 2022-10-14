@@ -2,9 +2,12 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import CardSobre from "../../components/CardSobre";
 import Main from "../../components/Main";
-import img1 from "../../assets/imagens/img1.png";
+
+import { useContext } from "react";
+import { LanguageContext } from "./../../provider/language/index";
 
 const Sobre = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <Main>
       <Box
@@ -19,13 +22,10 @@ const Sobre = () => {
         padding={"16px"}
         marginBottom={50}
       >
-        {/* <Box>
-          <Image minW={"300px"} w={"900px"} src={img1} />
-        </Box> */}
         <Box>
           <Box>
             <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"start"}>
-              Quem Somos?
+              {language ? "Who we are?" : "Quem Somos?"}
             </Text>
           </Box>
           <Box marginTop={"10px"}>
@@ -33,10 +33,9 @@ const Sobre = () => {
               textAlign={"start"}
               fontSize={{ base: "15px", md: "15px", lg: "20px" }}
             >
-              História: A Refribek iniciou suas atividades em setembro de 2013
-              pelo eletrotécnico Celso Belmiro que atua na profissão desde 1993,
-              visando prestar serviços diferenciados, de qualidade e a preços
-              acessíveis.
+              {language
+                ? "History: Refribek started its activities in September 2013 by electrical technician Celso Belmiro who has been working in the profession since 1993,aiming to provide differentiated, quality and affordable services accessible."
+                : "História: A Refribek iniciou suas atividades em setembro de 2013 pelo eletrotécnico Celso Belmiro que atua na profissão desde 1993,visando prestar serviços diferenciados, de qualidade e a preços acessíveis."}
             </Text>
           </Box>
           <Box marginTop={"10px"}>
@@ -44,8 +43,9 @@ const Sobre = () => {
               textAlign={"start"}
               fontSize={{ base: "15px", md: "15px", lg: "20px" }}
             >
-              O que fazemos? A Refribek é uma empresa especializada no ramo de
-              soluções em refrigeração e elétrica no Rio de janeiro – RJ.
+              {language
+                ? "What we do? Refribek is a company specialized in the field of refrigeration and electrical solutions in Rio de Janeiro – RJ."
+                : "O que fazemos? A Refribek é uma empresa especializada no ramo de soluções em refrigeração e elétrica no Rio de janeiro – RJ."}
             </Text>
           </Box>
           <Box marginTop={"10px"}>
@@ -53,10 +53,9 @@ const Sobre = () => {
               textAlign={"start"}
               fontSize={{ base: "15px", md: "15px", lg: "20px" }}
             >
-              Nossas experiências? A Refribek é comprovadamente uma empresa
-              séria, responsável pela refrigeração e climatização de diversos
-              hotéis 5 estrelas, condomínios, comércios, residências e órgãos
-              públicos.
+              {language
+                ? "Our experiences? Refribek is a proven company responsible for the refrigeration and air conditioning of several 5 star hotels, condominiums, shops, residences and agencies public."
+                : "Nossas experiências? A Refribek é comprovadamente uma empresa séria, responsável pela refrigeração e climatização de diversos hotéis 5 estrelas, condomínios, comércios, residências e órgãos públicos."}
             </Text>
           </Box>
         </Box>
@@ -81,16 +80,16 @@ const Sobre = () => {
           flexDirection={"column"}
         >
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
-            Missão
+            {language ? "Mission" : "Missão"}
           </Text>
           <Text
             color={"black"}
             fontSize={{ base: "15px", md: "15px", lg: "18px" }}
             textAlign={"start"}
           >
-            A Refribek tem como missão ser excelência em atendimento e prestação
-            de serviços, para que nossos clientes se sintam valorizados e tenham
-            satisfação em contar com nosso time técnico.
+            {language
+              ? "Refribek's mission is to be excellence in service and provision of services, so that our customers feel valued and are satisfied with our technical team."
+              : "A Refribek tem como missão ser excelência em atendimento e prestação de serviços, para que nossos clientes se sintam valorizados e tenham satisfação em contar com nosso time técnico."}
           </Text>
         </CardSobre>
         <CardSobre
@@ -102,16 +101,16 @@ const Sobre = () => {
           flexDirection={"column"}
         >
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
-            Visão
+            {language ? "Vision" : "Visão"}
           </Text>
           <Text
             color={"black"}
             fontSize={{ base: "15px", md: "15px", lg: "18px" }}
             textAlign={"start"}
           >
-            Empreender com amor pelo que faz, para que a qualidade e preço justo
-            seja o diferencial nos nossos serviços e tornar a nossa marca como
-            referencia em serviços de qualidade.
+            {language
+              ? "Undertake with love for what you do, so that quality and fair price be the differential in our services and make our brand as reference in quality services."
+              : "Empreender com amor pelo que faz, para que a qualidade e preço justo seja o diferencial nos nossos serviços e tornar a nossa marca como referencia em serviços de qualidade."}
           </Text>
         </CardSobre>
         <CardSobre
@@ -123,15 +122,16 @@ const Sobre = () => {
           flexDirection={"column"}
         >
           <Text fontSize={"25px"} color={"#0E2A52"} fontWeight={"bold"}>
-            Valores
+            {language ? "Values" : "Valores"}
           </Text>
           <Text
             color={"black"}
             fontSize={{ base: "15px", md: "15px", lg: "18px" }}
             textAlign={"start"}
           >
-            Nossos valores se aplicam a prazo de entrega do serviço, qualidade,
-            preço justo e garantia de satisfação aos nossos clientes.
+            {language
+              ? "Our values apply to service delivery time, quality, fair price and satisfaction guarantee to our customers."
+              : "Nossos valores se aplicam a prazo de entrega do serviço, qualidade, preço justo e garantia de satisfação aos nossos clientes."}
           </Text>
         </CardSobre>
       </Box>

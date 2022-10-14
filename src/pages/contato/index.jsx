@@ -1,8 +1,11 @@
-import { AspectRatio, Box, Image, Text } from "@chakra-ui/react";
+import { AspectRatio, Box, Text } from "@chakra-ui/react";
 import React from "react";
 import Main from "../../components/Main";
+import { useContext } from "react";
+import { LanguageContext } from "./../../provider/language/index";
 
 const Contato = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <Main>
       <Box
@@ -21,7 +24,7 @@ const Contato = () => {
           flexDirection={"column"}
         >
           <Text fontSize={35} fontWeight={800} marginBottom={5}>
-            Nossa Localização
+            {language ? "Our Location" : "Nossa Localização"}
           </Text>
           <AspectRatio maxW={310} minW={310} h={400} ratio={1 / 1}>
             <iframe
@@ -43,7 +46,9 @@ const Contato = () => {
               fontWeight={800}
               mb={30}
             >
-              Telefone: (21) 99409-5425
+              {language
+                ? "Telephone: (21) 99409-5425"
+                : "Telefone: (21) 99409-5425"}
             </Text>
             <Text
               fontSize={{ base: "15px", md: "15px", lg: "15px" }}
@@ -57,14 +62,17 @@ const Contato = () => {
               fontWeight={800}
               mb={30}
             >
-              Segunda a Sexta: 8:00 ás 18:00 Sábados: 8:00 ás 14:00
+              {language
+                ? "Monday to Friday: 8:00 to 18:00 Saturday: 8:00 to 14:00"
+                : "Segunda a Sexta: 8:00 ás 18:00 Sábados: 8:00 ás 14:00"}
             </Text>
             <Text
               fontSize={{ base: "15px", md: "15px", lg: "15px" }}
               fontWeight={800}
             >
-              Matriz: Rua Itambaraçá – 125 (Lote 22 – Quadra 85) Bairro: Campo
-              Grande – CEP:23060-070 – RJ
+              {language
+                ? "Headquarters: Rua Itambaraçá – 125 (Lot 22 – Block 85) District: Campo Grande – CEP: 23060-070 – RJ"
+                : "Matriz: Rua Itambaraçá – 125 (Lote 22 – Quadra 85) Bairro: Campo Grande – CEP:23060-070 – RJ"}
             </Text>
           </Box>
         </Box>

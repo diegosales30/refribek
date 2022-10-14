@@ -9,15 +9,19 @@ import {
   ListItem,
   UnorderedList,
   Image,
+  Button,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import ColorModeToggle from "../nightMode";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../../assets/imagens/logoRefribek.png";
+import { useContext } from "react";
+import { LanguageContext } from "./../../provider/language/index";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
+  const { language, translate } = useContext(LanguageContext);
 
   const navigate = useNavigate();
 
@@ -96,7 +100,7 @@ export default function Header() {
                   transition={"all 0.2s ease-in-out"}
                   outline={"none"}
                 >
-                  Inicio
+                  {language ? "Home" : "Inicio"}
                 </ListItem>
                 <ListItem
                   onClick={() => handleNavigation("/servicos")}
@@ -106,7 +110,7 @@ export default function Header() {
                   transition={"all 0.2s ease-in-out"}
                   outline={"none"}
                 >
-                  Serviços
+                  {language ? "Services" : "Serviços"}
                 </ListItem>
                 <ListItem
                   onClick={() => handleNavigation("/contato")}
@@ -116,7 +120,8 @@ export default function Header() {
                   transition={"all 0.2s ease-in-out"}
                   outline={"none"}
                 >
-                  Contatos
+                  {" "}
+                  {language ? "Contacts" : "Contatos"}
                 </ListItem>
                 <ListItem
                   onClick={() => handleNavigation("/sobre")}
@@ -127,7 +132,8 @@ export default function Header() {
                   outline={"none"}
                   mr={"10px"}
                 >
-                  Sobre
+                  {" "}
+                  {language ? "About" : "Sobre"}
                 </ListItem>
               </UnorderedList>
             </Flex>
@@ -139,7 +145,12 @@ export default function Header() {
             direction={"row"}
             spacing={6}
           >
-            <ColorModeToggle />
+            <Box>
+              <ColorModeToggle />
+              <Button background={"transparent"} onClick={translate}>
+                {language ? " 🇺🇸" : " 🇧🇷"}
+              </Button>
+            </Box>
           </Stack>
         </Flex>
 
@@ -168,7 +179,7 @@ export default function Header() {
                 transition={"all 0.2s ease-in-out"}
                 outline={"none"}
               >
-                Inicio
+                {language ? "Home" : "Inicio"}
               </ListItem>
               <ListItem
                 onClick={() => handleNavigation("/servicos")}
@@ -179,7 +190,7 @@ export default function Header() {
                 outline={"none"}
                 mt={"10px"}
               >
-                Serviços
+                {language ? "Services" : "Serviços"}
               </ListItem>
               <ListItem
                 onClick={() => handleNavigation("/contato")}
@@ -190,7 +201,7 @@ export default function Header() {
                 outline={"none"}
                 mt={"10px"}
               >
-                Contatos
+                {language ? "Contacts" : "Contatos"}
               </ListItem>
               <ListItem
                 onClick={() => handleNavigation("/sobre")}
@@ -201,7 +212,7 @@ export default function Header() {
                 outline={"none"}
                 mt={"10px"}
               >
-                Sobre
+                {language ? "About" : "Sobre"}
               </ListItem>
             </UnorderedList>
           </Flex>

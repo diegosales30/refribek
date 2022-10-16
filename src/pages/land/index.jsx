@@ -5,13 +5,13 @@ import {
   Text,
   VStack,
   useBreakpointValue,
-  AspectRatio,
 } from "@chakra-ui/react";
 import { LanguageContext } from "../../provider/language";
 import { useNavigate } from "react-router-dom";
 import backgroundImgLand from "../../assets/imagens/pexels-max-vakhtbovych-6283961.jpg";
 import { useContext } from "react";
-import video01 from "../../assets/refribekFotos/v0.mp4";
+
+import VideoBox from "../../components/VideoBox";
 
 export default function Land() {
   const { language, translate } = useContext(LanguageContext);
@@ -47,6 +47,10 @@ export default function Land() {
           justify={"center"}
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+          display={"flex"}
+          flexDirection={"row"}
+          alignItens={"center"}
+          justifyContent={"center"}
         >
           <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
             <Text
@@ -59,6 +63,7 @@ export default function Land() {
                 ? "Hello, Welcome to Refribek, visit our website."
                 : "Olá, Sejam bem vindos a Refribek, acesse nosso site."}
             </Text>
+
             <Stack direction={"row"}>
               <Button
                 bg={"blue.400"}
@@ -71,6 +76,8 @@ export default function Land() {
               </Button>
             </Stack>
           </Stack>
+          {/* aqui é o componente do video */}
+          <VideoBox />
         </VStack>
       </Flex>
     </>

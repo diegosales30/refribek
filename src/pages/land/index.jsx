@@ -11,8 +11,6 @@ import { useNavigate } from "react-router-dom";
 import backgroundImgLand from "../../assets/imagens/pexels-max-vakhtbovych-6283961.jpg";
 import { useContext } from "react";
 
-import VideoBox from "../../components/VideoBox";
-
 export default function Land() {
   const { language, translate } = useContext(LanguageContext);
 
@@ -77,7 +75,7 @@ export default function Land() {
             </Stack>
           </Stack>
           {/* aqui é o componente do video */}
-          <VideoBox />
+          {/* <VideoBox /> */}
         </VStack>
       </Flex>
     </>

@@ -59,7 +59,7 @@ const Sobre = () => {
                 fontSize={{ base: "15px", md: "15px", lg: "20px" }}
               >
                 {language
-                  ? "Our experiences? Refribek is a proven company responsible for the refrigeration and air conditioning of several 5 star hotels, condominiums, shops, residences and agencies public."
+                  ? "Our experiences? Refribek is a proven company responsible for the refrigeration and air conditioning of several 5 star hotels, condominiums, shops, residences and public agencies ."
                   : "Nossas experiências? A Refribek é comprovadamente uma empresa séria, responsável pela refrigeração e climatização de diversos hotéis 5 estrelas, condomínios, comércios, residências e órgãos públicos."}
               </Text>
             </Box>
@@ -93,7 +93,7 @@ const Sobre = () => {
               textAlign={"start"}
             >
               {language
-                ? "Refribek's mission is to be excellence in service and provision of services, so that our customers feel valued and are satisfied with our technical team."
+                ? "Refribek's mission is to be excellent in service and provision of services, so that our customers feel valued and satisfied with our technical team."
                 : "A Refribek tem como missão ser excelência em atendimento e prestação de serviços, para que nossos clientes se sintam valorizados e tenham satisfação em contar com nosso time técnico."}
             </Text>
           </CardSobre>

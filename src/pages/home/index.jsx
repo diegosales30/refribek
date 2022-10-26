@@ -54,7 +54,7 @@ const Home = () => {
                 </Text>
                 <Text fontSize={{ base: "15px", md: "15px", lg: "20px" }}>
                   {language
-                    ? "Advantages over the competition? Refribek is a company of ethical and moral principles that help in the design and execution of the service, the customers the customers so that the feel themselves with the guarantee of an excellent job."
+                    ? "Advantages over the competition? Refribek is a company of ethical and moral principles that help in the design and execution of the service, so that costumers feel pleased with the guarantee of an excellent job."
                     : "Vantagens sobre a concorrência? A Refribek é uma empresa de princípios éticos e morais que ajuda no projeto e execução do serviço, respeitando os interesses dos clientes para que os mesmos sintam-se satisfeitos com a garantia de um excelente trabalho."}
                 </Text>
               </Box>
@@ -62,6 +62,7 @@ const Home = () => {
           </Box>
         </Flex>
       </Main>
+      z
       <TopFood />
       <Footer />
     </>

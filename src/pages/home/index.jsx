@@ -62,7 +62,7 @@ const Home = () => {
           </Box>
         </Flex>
       </Main>
-      z
+
       <TopFood />
       <Footer />
     </>

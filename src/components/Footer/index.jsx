@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { SiGmail, SiWhatsapp, SiFacebook } from "react-icons/si";
+import { SiGmail, SiWhatsapp, SiFacebook, SiInstagram } from "react-icons/si";
 
 const breakpoints = ["100vw"];
 export default function Footer() {
@@ -27,8 +27,13 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Text textAlign={"center"}>
-          © 2022 Upscale Developers-ME. All rights reserved
+          <Link href={"mailto:diegofelipesales23@gmail.com"} target={"_blank"}>
+            {" "}
+            © 2022 Upscale Developers-ME.{" "}
+          </Link>{" "}
+          All rights reserved
         </Text>
+
         <Text fontSize={"0.8rem"} fontWeight={"bold"} textAlign={"center"}>
           CNPJ: 18.876.850/0001-13 CREA: 2011130952 CELSO BELMIRO - DIRETOR
           TÉCNICO
@@ -61,16 +66,16 @@ export default function Footer() {
             />
           </Link>
           <Link
-            label={"Facebook"}
-            href={"https://www.facebook.com/CelsoRefribek"}
+            label={"Instagram"}
+            href={"https://www.instagram.com/refribek/"}
             target={"_black"}
           >
-            <SiFacebook
+            <SiInstagram
               style={{
                 fontSize: "25px",
-                borderRadius: "100%",
-                backgroundColor: "white",
-                color: "#4267B2",
+                //borderRadius: "100%",
+                //backgroundColor: "white",
+                color: "#C13584",
               }}
             />
           </Link>

@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { SiGmail, SiWhatsapp, SiFacebook, SiInstagram } from "react-icons/si";
+import { SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si";
 
 const breakpoints = ["100vw"];
 export default function Footer() {

@@ -4,7 +4,7 @@
 
 ### Deploy da aplicação com Vercel: :octocat::
 
-[Refribek](https://refribek.vercel.app/)
+[Refribek](http://refribek.com/)
 
 > Status do Projeto: Em Andamento 🕐:
 
